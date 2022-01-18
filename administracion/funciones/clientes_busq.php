@@ -5,10 +5,8 @@
 
 <?PHP
 	if (isset($_REQUEST[nom])){$nom=$_REQUEST[nom];}else{$nom="";};
-	if (isset($_REQUEST[rubro1])){$rubro1=$_REQUEST[rubro1];}else{$rubro1="";};
-	if (isset($_REQUEST[espec1])) {$espec1=$_REQUEST [espec1]; }else{$espec1="";};
-	if (isset($_REQUEST[rubro2])){$rubro1=$_REQUEST[rubro2];}else{$rubro2="";};
-	if (isset($_REQUEST[espec3])) {$espec1=$_REQUEST [espec2]; }else{$espec2="";};
+	if (isset($_REQUEST[rubro])){$rubro1=$_REQUEST[rubro];}else{$rubro="";};
+	if (isset($_REQUEST[espec])) {$espec1=$_REQUEST [espec]; }else{$espec="";};
 
 	if ($rubro1=="" and $espec1==""){
 		$query="SELECT * FROM clientes ORDER BY nombre ASC "; ?>

@@ -175,7 +175,7 @@ include('funciones/login_ctrl.php'); ?>
 										   </select>
 										</td>
 										<td>
-											<div id="especialidad"></div>
+											<p id="especialidad"></p>
 										</td>
 										<td>
 											<input type="submit" value="Buscar" class="btn btn-info">
@@ -186,7 +186,7 @@ include('funciones/login_ctrl.php'); ?>
 										<td><b>Nombre y Apellido</b></td>
 										<td><b>Razon Social/Nombre Comercial</b></td>
 										<td><b>Rubro</b></td>
-                                        <td><b>Especialidad</b></td>
+                                        <td><b>Especialización</b></td>
 										<td></td>
 									</tr>
 									</thead>
@@ -199,6 +199,8 @@ include('funciones/login_ctrl.php'); ?>
 										<td><?PHP echo $fila["razsoc_nomcom"]; ?></td>
 										<td><?PHP echo $fila["rubro1"]; ?></td>
                                         <td><?PHP echo $fila["especialidad1"]; ?></td>
+										<td><?PHP echo $fila["rubro2"]; ?></td>
+										 <td><?PHP echo $fila["especialidad2"]; ?></td>
 										<td>											
 											<div class="btn-group">
 												<button type="button" class="btn btn-icon btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-cog4"></i></button>
