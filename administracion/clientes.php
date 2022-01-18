@@ -169,9 +169,9 @@ include('funciones/login_ctrl.php'); ?>
 												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
 												 <?PHP } ?>	
 												 <?PHP while($rub1=mysqli_fetch_assoc($qrubro1)){?>
-												 <option value="<?PHP echo strtolower($rub1['descripcion']);?>">
-												 <?PHP echo $rub1['descripcion'];?></option>
-												 <?PHP }?>      
+												 <option value="<?PHP echo strtoupper($rub1['descripcion']);?>">
+												 <?PHP echo strtoupper($rub1['descripcion']);?></option>
+												 <?PHP } ?>      
 										   </select>
 										</td>
 										<td>
