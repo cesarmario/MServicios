@@ -126,7 +126,7 @@ include('funciones/login_ctrl.php'); ?>
 								<li class="active"><a href="#">Especialidades</a></li>
 							</ul>
 						</li>
-						<li><a href="clientes.php">Clientes</a></li>
+						<li><a href="proveedores.php">Proveedores</a></li>
 					</li>
                     <?PHP if($_SESSION['sesion_UserAdm']==1){?>
                     <li>

@@ -118,7 +118,7 @@ include('funciones/login_ctrl.php'); ?>
 						<a href="#"><span>Control de Datos</span> <i class="icon-insert-template"></i></a>
 						<ul>
 							<li><a href="rubros.php">Rubros</a></li>
-							<li><a href="clientes.php">Clientes</a></li>
+							<li><a href="proveedores.php">Proveedores</a></li>
                         </ul>
                     </li>
                     <?PHP if($_SESSION['sesion_UserAdm']==1){?>
