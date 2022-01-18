@@ -160,26 +160,23 @@ include('funciones/login_ctrl.php'); ?>
                                              onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30">
 										</td>
 										<td>
-											<?PHP $qrubro1=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
-											<select data-placeholder="Rubro" class="select-search" name="rubro1">
+											<?PHP $qrubro=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
+											<select data-placeholder="Rubro" class="select-search" name="rubro" id="rubro">
 												 <?PHP if($_REQUEST['descripcion']==''){?>
-												 <option selected value=""></option>
+												 <option selected value="0"></option>
 												 <?PHP }else{?>
 												 <option selected value="">- Todas -</option>
 												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
 												 <?PHP } ?>	
-												 <?PHP while($rub1=mysqli_fetch_assoc($qrubro1)){?>
-												 <option value="<?PHP echo strtoupper($rub1['descripcion']);?>">
-												 <?PHP echo strtoupper($rub1['descripcion']);?></option>
+												 <?PHP while($rub=mysqli_fetch_assoc($qrubro)){?>
+												 <option value="<?PHP echo $rub['id'];?>">
+												 <?PHP echo strtoupper($rub['descripcion']);?></option>
 												 <?PHP } ?>      
 										   </select>
 										</td>
 										<td>
-											<input type="text" class="form-control" placeholder="Especializacion" name="espec1" 
-                                             onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30">
+											<div id="especialidad"></div>
 										</td>
-										<td></td>
-										<td></td>										
 										<td>
 											<input type="submit" value="Buscar" class="btn btn-info">
 											<input type="button" onClick="location.href='avisos_abm.php?fn=avisos_new';" value="Nuevo" class="btn btn-success">
@@ -188,10 +185,8 @@ include('funciones/login_ctrl.php'); ?>
 									<tr>
 										<td><b>Nombre y Apellido</b></td>
 										<td><b>Razon Social/Nombre Comercial</b></td>
-										<td><b>Rubro 1</b></td>
-                                        <td><b>Especialización 1</b></td>
-										<td><b>Rubro 2</b></td>
-                                        <td><b>Especialización 2</b></td>
+										<td><b>Rubro</b></td>
+                                        <td><b>Especialidad</b></td>
 										<td></td>
 									</tr>
 									</thead>
@@ -204,8 +199,6 @@ include('funciones/login_ctrl.php'); ?>
 										<td><?PHP echo $fila["razsoc_nomcom"]; ?></td>
 										<td><?PHP echo $fila["rubro1"]; ?></td>
                                         <td><?PHP echo $fila["especialidad1"]; ?></td>
-										<td><?PHP echo $fila["rubro2"]; ?></td>
-										 <td><?PHP echo $fila["especialidad2"]; ?></td>
 										<td>											
 											<div class="btn-group">
 												<button type="button" class="btn btn-icon btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-cog4"></i></button>
@@ -245,3 +238,25 @@ include('funciones/login_ctrl.php'); ?>
 	<!-- /content -->
 </body>
 </html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#rubro').val(1);
+		recargarLista();
+
+		$('#rubro').change(function(){
+			recargarLista();
+		});
+	})
+</script>
+<script type="text/javascript">
+	function recargarLista(){
+		$.ajax({
+			type:"POST",
+			url:"funciones/especialidad_lista.php",
+			data:"idrubro=" + $('#rubro').val(),
+			success:function(r){
+				$('#especialidad').html(r);
+			}
+		});
+	}
+</script>
