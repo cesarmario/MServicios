@@ -190,7 +190,7 @@ include('funciones/login_ctrl.php'); ?>
 									</tr>
 									</thead>
 									<tbody>
-                                    <?PHP include('funciones/clientes_busq.php');
+                                    <?PHP include('funciones/proveedores_busq.php');
                                     if (mysqli_num_rows($result)>0){ ?>													
                                     <?PHP while($fila=mysqli_fetch_assoc($result)){?>                                    
 									<tr>
