@@ -139,13 +139,13 @@ include('funciones/login_ctrl.php'); ?>
 			<!-- Page header -->
 			<div class="page-header">
 				<div class="page-title">
-					<h3>Control de Datos<small>Clientes</small></h3>
+					<h3>Control de Datos<small>Proveedores</small></h3>
 				</div>
 			</div>
 			<!-- /page header -->
 
         	<!-- Form components -->
-				<form class="form-horizontal" role="form" action="clientes.php" method="GET">
+				<form class="form-horizontal" role="form" action="proveedores.php" method="GET">
 				<!-- Default table -->
 			            <div class="panel panel-default">
                             <?PHP include('funciones/conexion.php'); ?> 
@@ -162,11 +162,9 @@ include('funciones/login_ctrl.php'); ?>
 										<td>
 											<?PHP $qrubro=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
 											<select data-placeholder="Rubro" class="select-search" name="rubro" id="rubro">
-												 <?PHP if($_REQUEST['descripcion']==''){?>
-												 <option selected value="0"></option>
-												 <?PHP }else{?>
-												 <option selected value="">- Todas -</option>
-												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
+												 <option selected value="0">Seleccione un Rubro</option>
+												 <?PHP if($_REQUEST['descripcion']!=''){?>
++												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
 												 <?PHP } ?>	
 												 <?PHP while($rub=mysqli_fetch_assoc($qrubro)){?>
 												 <option value="<?PHP echo $rub['id'];?>">
@@ -175,7 +173,7 @@ include('funciones/login_ctrl.php'); ?>
 										   </select>
 										</td>
 										<td>
-											<p id="especialidad"></p>
+											<div id="especialidad"></div>
 										</td>
 										<td>
 											<input type="submit" value="Buscar" class="btn btn-info">
