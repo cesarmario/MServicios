@@ -162,13 +162,14 @@ include('funciones/login_ctrl.php'); ?>
 										<td>
 											<?PHP $qrubro=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
 											<select data-placeholder="Rubro" class="select-search" name="rubro" id="rubro">
-												 <option selected value="0">Seleccione un Rubro</option>
+												 <option value="0">Seleccione un Rubro</option>
 												 <?PHP if($_REQUEST['descripcion']!=''){?>
 +												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
 												 <?PHP } ?>	
 												 <?PHP while($rub=mysqli_fetch_assoc($qrubro)){?>
 												 <option value="<?PHP echo $rub['id'];?>">
-												 <?PHP echo strtoupper($rub['descripcion']);?></option>
+												 <?PHP echo strtoupper($rub['descripcion']);?>
+												 </option>
 												 <?PHP } ?>      
 										   </select>
 										</td>
@@ -240,7 +241,7 @@ include('funciones/login_ctrl.php'); ?>
 </html>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#rubro').val(1);
+		$('#rubro').val(0);
 		recargarLista();
 
 		$('#rubro').change(function(){
