@@ -186,7 +186,7 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Most Popular Destination</h2>
+					<h2>Servicios más buscados</h2>
 					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
@@ -199,7 +199,7 @@
 							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>New York, USA</h2>
+							<h2>Plomería/h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -212,7 +212,7 @@
 							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Seoul, South Korea</h2>
+							<h2>Albañilería</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -225,7 +225,7 @@
 							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Paris, France</h2>
+							<h2>Abogacía/h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -240,7 +240,7 @@
 							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Sydney, Australia</h2>
+							<h2>Electricista</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -254,7 +254,7 @@
 							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Greece, Europe</h2>
+							<h2>Enfermería</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -268,7 +268,7 @@
 							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Spain, Europe</h2>
+							<h2>Gestoría/h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
