@@ -115,7 +115,7 @@ include('funciones/login_ctrl.php'); ?>
 						<a href="#"><span>Carga de Datos</span><i class="icon-insert-template"></i></a>
 						<ul>
                         	<li><a href="rubros.php">Rubros</a></li>
-							<li class="active"><a href="#">Clientes</a></li>
+							<li class="active"><a href="#">Proveedores</a></li>
 						</ul>
 					</li>
                     <?PHP if($_SESSION['sesion_UserAdm']==1){?>
@@ -139,13 +139,13 @@ include('funciones/login_ctrl.php'); ?>
 			<!-- Page header -->
 			<div class="page-header">
 				<div class="page-title">
-					<h3>Control de Datos<small>Clientes</small></h3>
+					<h3>Control de Datos<small>Proveedores</small></h3>
 				</div>
 			</div>
 			<!-- /page header -->
 
         	<!-- Form components -->
-				<form class="form-horizontal" role="form" action="clientes.php" method="GET">
+				<form class="form-horizontal" role="form" action="proveedores.php" method="GET">
 				<!-- Default table -->
 			            <div class="panel panel-default">
                             <?PHP include('funciones/conexion.php'); ?> 
@@ -160,26 +160,22 @@ include('funciones/login_ctrl.php'); ?>
                                              onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30">
 										</td>
 										<td>
-											<?PHP $qrubro1=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
-											<select data-placeholder="Rubro" class="select-search" name="rubro1">
-												 <?PHP if($_REQUEST['descripcion']==''){?>
-												 <option selected value=""></option>
-												 <?PHP }else{?>
-												 <option selected value="">- Todas -</option>
-												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
+											<?PHP $qrubro=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
+											<select data-placeholder="Rubro" class="select-search" name="rubro" id="rubro">
+												 <option value="0">Seleccione un Rubro</option>
+												 <?PHP if($_REQUEST['descripcion']!=''){?>
++												 <option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
 												 <?PHP } ?>	
-												 <?PHP while($rub1=mysqli_fetch_assoc($qrubro1)){?>
-												 <option value="<?PHP echo strtolower($rub1['descripcion']);?>">
-												 <?PHP echo $rub1['descripcion'];?></option>
-												 <?PHP }?>      
+												 <?PHP while($rub=mysqli_fetch_assoc($qrubro)){?>
+												 <option value="<?PHP echo $rub['id'];?>">
+												 <?PHP echo strtoupper($rub['descripcion']);?>
+												 </option>
+												 <?PHP } ?>      
 										   </select>
 										</td>
 										<td>
-											<input type="text" class="form-control" placeholder="Especializacion" name="espec1" 
-                                             onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30">
+											<div id="especialidad"></div>
 										</td>
-										<td></td>
-										<td></td>										
 										<td>
 											<input type="submit" value="Buscar" class="btn btn-info">
 											<input type="button" onClick="location.href='avisos_abm.php?fn=avisos_new';" value="Nuevo" class="btn btn-success">
@@ -188,15 +184,13 @@ include('funciones/login_ctrl.php'); ?>
 									<tr>
 										<td><b>Nombre y Apellido</b></td>
 										<td><b>Razon Social/Nombre Comercial</b></td>
-										<td><b>Rubro 1</b></td>
-                                        <td><b>Especialización 1</b></td>
-										<td><b>Rubro 2</b></td>
-                                        <td><b>Especialización 2</b></td>
+										<td><b>Rubro</b></td>
+                                        <td><b>Especialización</b></td>
 										<td></td>
 									</tr>
 									</thead>
 									<tbody>
-                                    <?PHP include('funciones/clientes_busq.php');
+                                    <?PHP include('funciones/proveedores_busq.php');
                                     if (mysqli_num_rows($result)>0){ ?>													
                                     <?PHP while($fila=mysqli_fetch_assoc($result)){?>                                    
 									<tr>
@@ -233,7 +227,7 @@ include('funciones/login_ctrl.php'); ?>
 
 	        <!-- Footer -->
 	        <div class="footer clearfix">
-		        <div class="pull-left">&copy; 2021. <a href="#">Mario De los Rios</a></div>
+		        <div class="pull-left">&copy; 2022. <a href="#">Mario De los Rios</a></div>
 	        </div>
 	        <!-- /footer -->
 
@@ -245,3 +239,25 @@ include('funciones/login_ctrl.php'); ?>
 	<!-- /content -->
 </body>
 </html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#rubro').val(0);
+		recargarLista();
+
+		$('#rubro').change(function(){
+			recargarLista();
+		});
+	})
+</script>
+<script type="text/javascript">
+	function recargarLista(){
+		$.ajax({
+			type:"POST",
+			url:"funciones/especialidad_lista.php",
+			data:"idrubro=" + $('#rubro').val(),
+			success:function(r){
+				$('#especialidad').html(r);
+			}
+		});
+	}
+</script>

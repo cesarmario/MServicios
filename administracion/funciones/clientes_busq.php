@@ -11,7 +11,7 @@
 	if (isset($_REQUEST[espec3])) {$espec1=$_REQUEST [espec2]; }else{$espec2="";};
 
 	if ($rubro1=="" and $espec1==""){
-		$query="SELECT * FROM clientes ORDER BY nombre DESC "; ?>
+		$query="SELECT * FROM clientes ORDER BY nombre ASC "; ?>
 		<script>
 			//alert("No hay filtros!");
 		</script>
@@ -19,12 +19,13 @@
 	} else {
 		
 		if ($rubro1!=""){
-			$query="SELECT * FROM clientes WHERE strtolower(rubro1) LIKE '%$rubro1%'";
+			echo "busca Rubro: " . $rubro1;
+			$query="SELECT * FROM clientes WHERE upper(rubro1) LIKE '%$rubro1%'";
 
 		}
 		
 		if ($espec1!=""){
-			$query="SELECT * FROM clientes WHERE strtolower(especialidad1) LIKE '%$espec1%'";
+			$query="SELECT * FROM clientes WHERE upper(especialidad1) LIKE '%$espec1%'";
 	
 		}
 	} 
