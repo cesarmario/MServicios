@@ -143,6 +143,25 @@
 														<div id="especialidad"></div>
 													</div>
 												</div>
+
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="activities">Localidad</label>
+														<?PHP $qlocal=mysqli_query($conexion,"SELECT * FROM localidad ORDER BY nombre  "); ?>
+														<select data-placeholder="Rubro" class="form-control" name="rubro" id="rubro">
+															<?PHP if($_REQUEST['localidad']==''){?>
+															<option selected value=""></option>
+															<?PHP }else{?>
+															<option selected value="">- Todas -</option>
+															<option selected value="<?PHP echo strtolower($_REQUEST['id']); ?>">*&nbsp;<?PHP echo $_REQUEST['nombre']; ?></option>
+															<?PHP } ?>	
+															<?PHP while($local=mysqli_fetch_assoc($qlocal)){?>
+															<option value="<?PHP echo strtoupper($local['id']);?>">
+															<?PHP echo strtoupper($local['nombre']);?></option>
+															<?PHP } ?>      
+														</select>
+													</div>
+												</div>
 												
 												<!--div class="row form-group">
 													<div class="col-md-12">
