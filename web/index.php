@@ -124,15 +124,9 @@
 														<label for="activities">Servicio</label>
 														<?PHP $qrubro1=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
 														<select data-placeholder="Rubro" class="form-control" name="rubro" id="rubro">
-															<?PHP if($_REQUEST['descripcion']==''){?>
 															<option selected value=""></option>
-															<?PHP }else{?>
-															<option selected value="">- Todas -</option>
-															<option selected value="<?PHP echo strtolower($_REQUEST['descripcion']); ?>">*&nbsp;<?PHP echo $_REQUEST['descripcion']; ?></option>
-															<?PHP } ?>	
 															<?PHP while($rub1=mysqli_fetch_assoc($qrubro1)){?>
-															<option value="<?PHP echo strtoupper($rub1['descripcion']);?>">
-															<?PHP echo strtoupper($rub1['descripcion']);?></option>
+																<option value="<?PHP echo strtoupper($rub1['descripcion']);?>"><?PHP echo strtoupper($rub1['descripcion']);?></option>
 															<?PHP } ?>      
 														</select>
 													</div>
@@ -157,13 +151,6 @@
 														</select>
 													</div>
 												</div>
-												
-												<!--div class="row form-group">
-													<div class="col-md-12">
-														<label for="date-start">Date Travel</label>
-														<input type="text" id="date-start" class="form-control">
-													</div>
-												</div-->
 
 												<div class="row form-group">
 													<div class="col-md-12">
