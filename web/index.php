@@ -74,9 +74,9 @@
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li><a href="destination.html">Destination</a></li>
+						<li><a href="destination.html">Servicios</a></li>
 						<li class="has-dropdown">
-							<a href="#">Servicios</a>
+							<a href="#">Prestaciones</a>
 							<ul class="dropdown">
 								<li><a href="#">Europe</a></li>
 								<li><a href="#">Asia</a></li>
@@ -84,7 +84,7 @@
 								<li><a href="#">Canada</a></li>
 							</ul>
 						</li>
-						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="pricing.html">Usuario</a></li>
 						<li><a href="contact.html">Contacto</a></li>
 					</ul>	
 				</div>
@@ -200,7 +200,7 @@
 							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Plomería/h2>
+							<h2>Plomería</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -226,7 +226,7 @@
 							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Abogacía/h2>
+							<h2>Abogacía</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -269,7 +269,7 @@
 							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Gestoría/h2>
+							<h2>Gestoría</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
 							<p><span class="btn btn-primary">Schedule a Trip</span></p>
 						</div>
@@ -284,8 +284,8 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2>Como ser proveedor de Servicios</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>¿Cómo ser proveedor de Servicios?</h2>
+					<p>Sé parte de la comunidad más grande de servicios y soluciones integrales del mercado.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -294,8 +294,8 @@
 						<span class="icon">
 							<i>1</i>
 						</span>
-						<h3>Lorem ipsum dolor sit amet</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Datos Personales</h3>
+						<p>Consignar los datos personales tal cual aparecen en su DNI, como así también el domicilio y teléfono de su espacio de trabajo.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6">
@@ -303,8 +303,8 @@
 						<span class="icon">
 							<i>2</i>
 						</span>
-						<h3>Consectetur adipisicing elit</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Datos del Servicio</h3>
+						<p>Detallar el servicio que Usted brinda, la forma en que lo realiza (presencial o virtual) y que puede aportar al potencial cliente.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6">
@@ -312,8 +312,8 @@
 						<span class="icon">
 							<i>3</i>
 						</span>
-						<h3>Dignissimos asperiores vitae</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Disponibilidad y Cobertura</h3>
+						<p>Es importante destacar el horario de trabajo y el área geográfica donde puede brindar el servicio.</p>
 					</div>
 				</div>
 				
