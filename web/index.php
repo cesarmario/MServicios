@@ -103,7 +103,9 @@
 					<div class="row row-mt-15em">
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<h2><b>MICROSERVICIOS</b> es un sitio WEB que tiene gran alcance en la comunidad, tu servicio será visible para más clientes, 
-							logrando potenciar tus prestaciones. Crea tu perfil y vende tus servicios.</h2>	
+							logrando potenciar tus prestaciones. Crea tu perfil y vende tus servicios.</h2>
+							<span class="btn btn-primary">Iniciar Ses&oacute;n</span>
+							<span class="btn btn-primary">Registrate</span>
 						</div>
 						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
 							<div class="form-wrap">
@@ -157,7 +159,7 @@
 														<input type="submit" class="btn btn-primary btn-block" value="Buscar">
 													</div>
 												</div>
-												<div class="row form-group">
+												<!--div class="row form-group">
 													<div class="col-md-12">
 														<input type="button" class="btn btn-primary btn-block" value="Iniciar sesi&oacute;n">
 													</div>
@@ -166,11 +168,9 @@
 													<div class="col-md-12">
 														<input type="button" class="btn btn-primary btn-block" value="Registrate">
 													</div>
-												</div>
+												</div-->
 											</form>	
-										</div>
-
-										
+										</div>										
 									</div>
 								</div>
 							</div>
