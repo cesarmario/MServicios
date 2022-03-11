@@ -9,9 +9,9 @@
 	if (isset($_REQUEST['rubro'])){$rubro=$_REQUEST['rubro'];}else{$rubro=0;};
 	if (isset($_REQUEST['espec'])){$espec=$_REQUEST['espec'];}else{$espec=0;};
 	
-	echo "Nombre:".$nom;
-	echo "<br>id rubro:".$rubro;
-	echo "<br>id espec:".$espec;
+	//echo "Nombre:".$nom;
+	//echo "<br>id rubro:".$rubro;
+	//echo "<br>id espec:".$espec;
 	if ($rubro==0 and $espec==0 and $nom==""){
 		$query="SELECT * FROM vista_proveedores ORDER BY nombre ASC "; ?>
 	<?PHP
