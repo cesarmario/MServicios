@@ -154,11 +154,12 @@ include('funciones/login_ctrl.php'); ?>
 				                <table class="table">
 								<thead>
                                 	<tr>
-										<td></td>
+										
 										<td>
-											<input type="text" class="form-control" placeholder="Nombre" name="nom" 
+											<input type="text" class="form-control" placeholder="Nombre / Apellido" name="nom" 
                                              onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30">
 										</td>
+										<td></td>
 										<td>
 											<?PHP $qrubro=mysqli_query($conexion,"SELECT * FROM rubros ORDER BY descripcion  "); ?>
 											<select data-placeholder="Rubro" class="select-search" name="rubro" id="rubro">
@@ -186,6 +187,8 @@ include('funciones/login_ctrl.php'); ?>
 										<td><b>Razon Social/Nombre Comercial</b></td>
 										<td><b>Rubro</b></td>
                                         <td><b>Especialización</b></td>
+										<td><b>localidad</b></td>
+                                        <td><b>Tel&eacute;fono</b></td>
 										<td></td>
 									</tr>
 									</thead>
@@ -194,19 +197,19 @@ include('funciones/login_ctrl.php'); ?>
                                     if (mysqli_num_rows($result)>0){ ?>													
                                     <?PHP while($fila=mysqli_fetch_assoc($result)){?>                                    
 									<tr>
-										<td><?PHP echo $fila["nombre"] . " " .$fila["apellido"];;; ?></td>
+										<td><?PHP echo $fila["nombre"] . " " .$fila["apellido"]; ?></td>
 										<td><?PHP echo $fila["razsoc_nomcom"]; ?></td>
-										<td><?PHP echo $fila["rubro1"]; ?></td>
-                                        <td><?PHP echo $fila["especialidad1"]; ?></td>
-										<td><?PHP echo $fila["rubro2"]; ?></td>
-										 <td><?PHP echo $fila["especialidad2"]; ?></td>
+										<td><?PHP echo $fila["rubro_nom"]; ?></td>
+                                        <td><?PHP echo $fila["especialidad_nom"]; ?></td>
+										<td><?PHP echo $fila["localidad"]; ?></td>
+										 <td><?PHP echo $fila["telefono"]; ?></td>
 										<td>											
 											<div class="btn-group">
 												<button type="button" class="btn btn-icon btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-cog4"></i></button>
 												<ul class="dropdown-menu icons-right dropdown-menu-right">
 
-													<li><a href="clientes_abm.php?id=<?PHP echo  $fila['id'];?>&fn=udp">
-													<i class="icon-pencil4"></i>Editar</a></li>
+													<!--li><a href="clientes_abm.php?id=<?PHP echo  $fila['id'];?>&fn=udp">
+													<i class="icon-pencil4"></i>Editar</a></li-->
 													
 													<!--li><a href="funciones/abm_avisos.php?id=<?PHP echo  $fila['id'];?>&fn=avisos_del">
 													<i class="icon-remove"></i>Eliminar</a></li-->

@@ -8,33 +8,35 @@
 	if (isset($_REQUEST['nom'])){$nom=$_REQUEST['nom'];}else{$nom="";};
 	if (isset($_REQUEST['rubro'])){$rubro=$_REQUEST['rubro'];}else{$rubro=0;};
 	if (isset($_REQUEST['espec'])){$espec=$_REQUEST['espec'];}else{$espec=0;};
-	echo "id rubro:".$rubro;
+	
+	echo "Nombre:".$nom;
+	echo "<br>id rubro:".$rubro;
 	echo "<br>id espec:".$espec;
-	if ($rubro==0 and $espec==0){
-		$query="SELECT * FROM proveedores ORDER BY nombre ASC "; ?>
-		<script>
-			//alert("No hay filtros!");
-		</script>
+	if ($rubro==0 and $espec==0 and $nom==""){
+		$query="SELECT * FROM vista_proveedores ORDER BY nombre ASC "; ?>
 	<?PHP
 	} else {
-		
-		if ($rubro>0){
-			
-			$qrub="SELECT * FROM rubros WHERE id = $rubro";
-			$rstrub = mysqli_query($conexion, $qrub);
-			if ($rub=mysqli_fetch_assoc($rstrub)){
-			$nrubro = upper($rub["descripcion"]);			
-			echo "Busca Rubro: " . $rubro;
-			$query="SELECT * FROM proveedores WHERE upper(rubro1) LIKE '%$nrubro%'";			
-			}else {
-				echo "Error ID Rubro";
+		if ($nom==""){
+			if ($rubro>0){
+				$query="SELECT * FROM vista_proveedores WHERE rubro = $rubro";
+				
+				if ($espec>0){
+					$query="SELECT * FROM vista_proveedores WHERE rubro = $rubro AND especialidad = $espec";
+				}
 			}
+		}else{
+			$query="SELECT * FROM vista_proveedores WHERE UPPER(nombre) LIKE '%$nom%' OR UPPER(apellido) LIKE '%$nom%' ";
+			if ($rubro>0){
+				$query="SELECT * FROM vista_proveedores WHERE  (UPPER(nombre) LIKE '%$nom%' OR UPPER(apellido) LIKE '%$nom%') AND rubro = $rubro";
+				
+				if ($espec>0){
+					$query="SELECT * FROM vista_proveedores WHERE (UPPER(nombre) LIKE '%$nom%' OR UPPER(apellido) LIKE '%$nom%') AND rubro = $rubro AND especialidad = $espec";
+				}
+			}
+
+			
 		}
-		
-		if ($espec>0){
-			$query="SELECT * FROM proveedores WHERE upper(especialidad1) LIKE '%$$espec%'";
+	}
 	
-		}
-	} 
 	$result = mysqli_query($conexion, $query);
 	?>
