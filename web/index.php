@@ -194,10 +194,10 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/electricista.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/electricista.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/electricista.jpeg" alt="Image" class="img-responsive">
+							<img src="images/oficios/electricista.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Electricidad</h2>
@@ -207,10 +207,10 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/plomeria.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/plomeria.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/plomeria.jpeg" alt="Image" class="img-responsive">
+							<img src="images/oficios/plomeria.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Plomería</h2>
@@ -220,10 +220,10 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/abogacia1.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/abogacia1.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/abogacia1.jpeg" alt="Image" class="img-responsive">
+							<img src="images/oficios/abogacia.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Abogacía</h2>
@@ -235,10 +235,10 @@
 
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/cocinero-chef.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/cocinero-chef.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/cocinero-chef.jpeg alt="Image" class="img-responsive">
+							<img src="images/oficios/cocinero-chef.jpeg alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Cocinero/Chef</h2>
@@ -249,10 +249,10 @@
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/contador.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/contador.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/contador.jpeg" alt="Image" class="img-responsive">
+							<img src="images/oficios/contador.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Contabilidad</h2>
@@ -263,10 +263,10 @@
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/images/oficios/veterinario.jpeg" class="fh5co-card-item image-popup">
+					<a href="images/oficios/veterinario.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/images/oficios/veterinario.jpeg" alt="Image" class="img-responsive">
+							<img src="images/oficios/veterinario.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Veterinaria</h2>
