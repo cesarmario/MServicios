@@ -194,10 +194,10 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/electricista.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/electricista.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/electricista.jpeg" alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/electricista.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Electricidad</h2>
@@ -207,10 +207,10 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/plomeria.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/plomeria.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/plomeria.jpeg" alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/plomeria.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Plomería</h2>
@@ -220,10 +220,10 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/abogacia1.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/abogacia1.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/abogacia1.jpeg" alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/abogacia1.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Abogacía</h2>
@@ -235,10 +235,10 @@
 
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/cocinero-chef.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/cocinero-chef.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/cocinero-chef.jpeg alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/cocinero-chef.jpeg alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Cocinero/Chef</h2>
@@ -249,10 +249,10 @@
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/contador.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/contador.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/contador.jpeg" alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/contador.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Contabilidad</h2>
@@ -263,10 +263,10 @@
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="/web/imagenes_oficios/veterinario.jpeg" class="fh5co-card-item image-popup">
+					<a href="/web/images/oficios/veterinario.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="/web/imagenes_oficios/veterinario.jpeg" alt="Image" class="img-responsive">
+							<img src="/web/images/oficios/veterinario.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Veterinaria</h2>
@@ -328,7 +328,7 @@
 		<div class="gtco-container text-center">
 			<div class="display-t">
 				<div class="display-tc">
-					<h1>Microservicios potencia el alcance de tus servicios. \n Probá con nosotros.</h1>
+					<h1>Microservicios potencia el alcance de tus servicios. <br> Probá con nosotros.</h1>
 				</div>	
 			</div>
 		</div>
@@ -340,7 +340,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
 					<h2>Microservicios en números.</h2>
-					<p>Unite a nuestra comunidad de prestadores \n y usuarios, día a día creciendo.</p>
+					<p>Unite a nuestra comunidad de prestadores <br> y usuarios, día a día creciendo.</p>
 				</div>
 			</div>
 
