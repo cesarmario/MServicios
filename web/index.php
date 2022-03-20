@@ -104,7 +104,7 @@
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<h2><b>MICROSERVICIOS</b> es un sitio WEB que tiene gran alcance en la comunidad, tu servicio será visible para más clientes, 
 							logrando potenciar tus prestaciones. Crea tu perfil y vende tus servicios.</h2>
-							<span class="btn btn-primary">Iniciar Ses&oacute;n</span>
+							<span class="btn btn-primary">Iniciar Sesión</span>
 							<span class="btn btn-primary">Registrate</span>
 						</div>
 						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
@@ -113,7 +113,7 @@
 									
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
-											<h3>Que servicio necesitas hoy?</h3>
+											<h3>¿Qué servicio necesitas hoy?</h3>
 											<form action="#">
 												<!--div class="row form-group">
 													<div class="col-md-12">
@@ -136,7 +136,7 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="destination">Categoria</label>
+														<label for="destination">Categoría</label>
 														<div id="especialidad"></div>
 													</div>
 												</div>
@@ -188,90 +188,90 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 					<h2>Servicios más buscados</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p>Los servicios más demandados por la comunidad de Microservicios para permitir una búsqueda más rápida.</p>
 				</div>
 			</div>
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+					<a href="/web/imagenes_oficios/electricista.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="/web/imagenes_oficios/electricista.jpeg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Electricidad</h2>
+							<p>Servicio de Electricidad abarca: instalación eléctrica, mantenimiento, reparación, planos eléctricos domiciliarios o industriales, consultoría, entre otros.</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/web/imagenes_oficios/plomeria.jpeg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/web/imagenes_oficios/plomeria.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Plomería</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<p>Servicio de Plomería abarca: instalación de artefactos o cañerías de agua/cloaca, mantenimiento, reparación, planos domiciliarios o industriales, consultoría, entre otros</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_2.jpg" class="fh5co-card-item image-popup">
+					<a href="/web/imagenes_oficios/abogacia1.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Albañilería</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_3.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							<img src="/web/imagenes_oficios/abogacia1.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Abogacía</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<p>Servicio de Abogacía abarca: Asesoría/Representación/Gestión Civil, Comercial, Penal, Familia, Internacional, Laboral, Societario, entre otros.</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
 						</div>
 					</a>
 				</div>
 
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_4.jpg" class="fh5co-card-item image-popup">
+					<a href="/web/imagenes_oficios/cocinero-chef.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+							<img src="/web/imagenes_oficios/cocinero-chef.jpeg alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Electricista</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Cocinero/Chef</h2>
+							<p>Servicio de Cocinero/Chef abarca: Asesoría/Cocina en eventos públicos, fiestas, casamientos. Cocina tradicional, nacional e internacional, comida rápida, entre otros.</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
 						</div>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_5.jpg" class="fh5co-card-item image-popup">
+					<a href="/web/imagenes_oficios/contador.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
+							<img src="/web/imagenes_oficios/contador.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Enfermería</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Contabilidad</h2>
+							<p>Servicio de Contabilidad abarca: Asesoría/Representación/Gestión Administrativa, Comercial, Impositiva, Empresas, Monotributistas, AFIP, entre otros.</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
 						</div>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_6.jpg" class="fh5co-card-item image-popup">
+					<a href="/web/imagenes_oficios/veterinario.jpeg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+							<img src="/web/imagenes_oficios/veterinario.jpeg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Gestoría</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+							<h2>Veterinaria</h2>
+							<p>Servicio de Veterinaria abarca: Asesoría/Asistencia/Control, cirugía de perros, gatos y otros animales domésticos, animales de granja, alimentos, entre otros.</p>
+							<p><span class="btn btn-primary">Buscar</span></p>
 						</div>
 					</a>
 				</div>
@@ -328,7 +328,7 @@
 		<div class="gtco-container text-center">
 			<div class="display-t">
 				<div class="display-tc">
-					<h1>We have high quality services that you will surely love!</h1>
+					<h1>Microservicios potencia el alcance de tus servicios. \n Probá con nosotros.</h1>
 				</div>	
 			</div>
 		</div>
@@ -339,8 +339,8 @@
 
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-					<h2>Our Success</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Microservicios en números.</h2>
+					<p>Unite a nuestra comunidad de prestadores \n y usuarios, día a día creciendo.</p>
 				</div>
 			</div>
 
@@ -349,26 +349,26 @@
 				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-center">
 						<span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Destination</span>
+						<span class="counter-label">Servicios/ <br>categorías</span>
 
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-center">
 						<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Hotels</span>
+						<span class="counter-label">Prestadore <br>Registrados</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-center">
 						<span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Travelers</span>
+						<span class="counter-label">Usuarios <br>Registrados</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-center">
 						<span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
-						<span class="counter-label">Happy Customer</span>
+						<span class="counter-label">Comunidad <br>Satisfecha</span>
 
 					</div>
 				</div>
@@ -383,8 +383,8 @@
 		<div class="gtco-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Subscribe</h2>
-					<p>Be the first to know about the new templates.</p>
+					<h2>Registrá tu servicio</h2>
+					<p>Es simple y rápido</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -393,11 +393,11 @@
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Your Email">
+								<input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
+							<button type="submit" class="btn btn-default btn-block">Registrate</button>
 						</div>
 					</form>
 				</div>
@@ -411,44 +411,46 @@
 
 				<div class="col-md-4">
 					<div class="gtco-widget">
-						<h3>About Us</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?</p>
+						<h3>Sobre Microservicios</h3>
+						<p>Microservicios nació en el 2022, a partir de la necesidad de concentrar las miles de búsquedas difuminadas de servicios, oficios o profesionales que existen, como así también de dar la posibilidad a aquellos de publicar sus trabajos o habilidades. La misión es unir la oferta y la demanda.</p>
 					</div>
 				</div>
 
 				<div class="col-md-2 col-md-push-1">
 					<div class="gtco-widget">
-						<h3>Destination</h3>
+						<h3>Información:</h3>
 						<ul class="gtco-footer-links">
-							<li><a href="#">Europe</a></li>
-							<li><a href="#">Australia</a></li>
-							<li><a href="#">Asia</a></li>
-							<li><a href="#">Canada</a></li>
-							<li><a href="#">Dubai</a></li>
+							<li><a href="#">Términos y condiciones (Generales)</a></li>
+							<li><a href="#">Términos y condiciones (Prestadores)</a></li>
+							<li><a href="#">Privacidad</a></li>
+							<li><a href="#">Preguntas frecuentes (FAQ's)</a></li>
+							<li><a href="#">Información y consejos</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-md-2 col-md-push-1">
 					<div class="gtco-widget">
-						<h3>Hotels</h3>
+						<h3>Servicios y Profesionales:</h3>
 						<ul class="gtco-footer-links">
-							<li><a href="#">Luxe Hotel</a></li>
-							<li><a href="#">Italy 5 Star hotel</a></li>
-							<li><a href="#">Dubai Hotel</a></li>
-							<li><a href="#">Deluxe Hotel</a></li>
-							<li><a href="#">BoraBora Hotel</a></li>
+							<li><a href="#">Servicios registrados</a></li>
+							<li><a href="#">Prestadores</a></li>
+							<li><a href="#">Categorías</a></li>
+							<li><a href="#">Destacados</a></li>
+							<li><a href="#">Micro Prestadores</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-md-3 col-md-push-1">
 					<div class="gtco-widget">
-						<h3>Get In Touch</h3>
+						<h3>Contacto - Redes:</h3>
 						<ul class="gtco-quick-contact">
-							<li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
-							<li><a href="#"><i class="icon-mail2"></i> info@freehtml5.co</a></li>
-							<li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+							<li><a href="#"><i class="icon-phone"></i>microservicios.fb</a></li>
+							<li><a href="#"><i class="icon-mail2"></i>microservicios.info@gmail.com</a></li>
+							<li><a href="#"><i class="icon-chat"></i>microservicios.ig</a></li>
+							<li><a href="#"><i class="icon-chat"></i>microservicios.in</a></li>
+							<li><a href="#"><i class="icon-chat"></i>microservicios.tw</a></li>
 						</ul>
 					</div>
 				</div>
